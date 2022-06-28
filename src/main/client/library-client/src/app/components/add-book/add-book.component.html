@@ -1,0 +1,30 @@
+<article class="container">
+  <button class="btn btn-primary" routerLink="" routerLinkActive="active">
+    Back
+  </button>
+  <form [formGroup]="createBookFromGroup">
+    <div class="form">
+      <label>Title</label>
+      <input type="text" class="form-control w-25" formControlName="title" />
+    </div>
+    <hr class="" />
+    <div class="form">
+      <label>Author</label>
+      <input type="text" class="form-control w-25" formControlName="author" />
+    </div>
+    <hr />
+    <div class="form">
+      <label>Genre</label>
+      <input type="text" class="form-control w-25" formControlName="genre" />
+    </div>
+    <hr />
+    <div class="form">
+      <label>Year</label>
+      <input type="text" class="form-control w-25" formControlName="year" />
+    </div>
+
+    <button class="btn btn-success m-4 w-100" (click)="saveBook()">
+      Add book
+    </button>
+  </form>
+</article>
